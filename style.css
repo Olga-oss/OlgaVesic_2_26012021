@@ -281,7 +281,7 @@ body {
 #growth-icon{
 	margin-top: 19.92px;
 	padding-top: 30px;
-	padding-right: 40px!important;
+	padding-right: 40px; /*!important;*/
 	width: 35px;
 	height: 28px;
 	padding-left: 8px;
@@ -338,7 +338,7 @@ body {
 
 /* 						Third chapter            			 */
 
-/* -Third box -1- */
+/* -Third box  */
 #box-tree{
 	height: 525px;
 	padding: 0;
@@ -346,7 +346,7 @@ body {
 
 }
 
-/* Small List -2- */
+/* Small List  */
 #small-list-tree{
 	height: inherit;
 	padding: 0;
@@ -359,7 +359,7 @@ body {
 
 }
 
-/* Small cards activites  -3- */
+/* Small cards activites   */
 .small-cards-activities{
 	width: 350px;
 	margin-right: 40px;
@@ -371,7 +371,7 @@ body {
 }
 
 
-/*  Small-card-img-container-activities -4- */
+/*  Small-card-img-container-activities  */
 .small-card-img-container-activities{
 	width: 100%; 
 	height: 90%;
@@ -380,7 +380,7 @@ body {
 	border-top-right-radius: 15px;
 	position: relative;
 }
-/* Small card activities image  -5- */
+/* Small card activities image   */
 .small-card-activities-img{
 	width: 100%;
 	position: absolute;
@@ -388,63 +388,63 @@ body {
 
 
 
-/* Small cards large  -6- */
+/* Small cards large   */
 .small-cards-large{
 	flex-basis: 100%
 }
 
-/* Small card medium -6- */
+/* Small card medium  */
 .small-cards-medium{
 	flex-basis: 55%;
 }
 
-/* Small card small  -6- */
+/* Small card small   */
 .small-cards-small{
 	flex-basis: 35%; 
 }
-/* Small cards even -6  */
+/* Small cards even  */
 .small-cards-even{
 	flex-basis: 45%;
 }
 
 
 
-/* Small card space between card on top -7- */
+/* Small card space between card on top */
 .small-cards-margin-top{
 	margin-top: auto;
 }
 
-/* Text in small activities cards -8- */
+/* Text in small activities cards  */
 .small-cards-activities-text{
 	padding-left: 20px;
 	font-weight: bold;
 }
 
-/* Image in activities number 1   -9- */
+/* Image in activities number 1   */
 #activity-img-1{
 	height: 500px; 
 	width: 800px;  
 	left: -230px;
 }
-/* Image in activities number 2   -9- */
+/* Image in activities number 2    */
 #activity-img-2{
 	top: -110px;
 }
-/* Image in activities number 3   -9- */
+/* Image in activities number 3    */
 #activity-img-3{
 	top: -25px;
 }
-/* Image in activities number 4   -9- */
+/* Image in activities number 4    */
 #activity-img-4{
 	height: 500px; 
 	width: 800px;
 	left: -230px;
 }
-/* Image in activities number 5   -9- */
+/* Image in activities number 5   */
 #activity-img-5{
 	top: 0px;
 }
-/* Image in activities number 6   -9- */
+/* Image in activities number 6   */
 #activity-img-6{
 	top: -10px;
 }
@@ -454,7 +454,7 @@ body {
 
 
 
-/*      	 Other styles        */
+/*      	 Other styles   */     
 
 /* Color of text in input (Marseille, France) */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
