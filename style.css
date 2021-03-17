@@ -11,13 +11,6 @@ body {
 	margin-right: 2.5%;
 }
 
-/*Color of the text of nav,pa,a */
-nav p, a{ 
-	color: black;
-	text-decoration: none;
-
-}
-
 
 /* Often used  */
 .container{
@@ -31,7 +24,7 @@ nav p, a{
 }
 .flexbox{
 	display: flex;
-	
+	  
 }
 
 
@@ -47,17 +40,7 @@ nav p, a{
 }
 .nav-active{
 	color: #0065FC;
-}
-
-nav ul{
-	list-style-type: none;
-	display: flex;
-}
-/* Distance between nav items (Hébergements Activités S'inscrire) */
-nav li {
-	margin-left: 90px;
-}
-
+}  
 
 
 
@@ -69,8 +52,8 @@ nav li {
 	width: 450px;
 	height: 50px;
     
-	border-right: none; /*!important*/
-	border-left: none;  /*!important*/
+	border-right: none!important;
+	border-left: none!important;
 
    
 }
@@ -79,8 +62,6 @@ nav li {
 	
 	border: 1px solid #F2F2F2;
 	border-right: none;
-	/* border-top-left-radius:  15px;
-	border-bottom-left-radius: 15px; */
 	background-color: #F2F2F2;
 	width: 8%;
 	padding-left: 8px;
@@ -106,20 +87,11 @@ nav li {
 	background-color: #0065FC;
 	border: 1px solid #0065FC;
 	border-left: none;
-	/* border-top-right-radius:  20px;
-	border-bottom-right-radius: 20px; */
 	font-size: 1.15em;
 	font-weight: bold;
 	text-align: center;
 	color: white;
 }
-/* Color of text in input (Marseille, France) */
-::placeholder { 
-	color: black;
-
-}
-
-
 
 
 /* Filters */
@@ -166,25 +138,18 @@ nav li {
 	text-align: center;
 }
 
-/* Color of fontwesome icons */
-i{
-	color: #0065FC;
-}
 
 /* Big boxes (Left and Right) */
 #div-box-one{
-	/*margin-right: 20px; met que 2 cards in 3 rows*/
+	margin-right: 20px;
 	margin-bottom: 30px;
 	border-radius: 20px;
-
 	background-color: #F2F2F2;
 }
 #div-box-two{
 	margin-left: 20px;
 	margin-bottom: 30px;
 	border-radius: 20px;
-	
-	/*width: 660px;*/
 	background-color: #F2F2F2;
 }
 
@@ -199,11 +164,8 @@ i{
 	padding-left: 40px;
 	padding-top: 5px;
 	padding-bottom: 35px;
-
-	}
 	
-
-	
+}
 
 
 /* Lists of cards (rows amd columns) */
@@ -215,16 +177,14 @@ i{
 	display: flex;
   	flex-wrap: wrap;
 }
-
-
-#small-list-two{                                /*ul id=...*/
-	list-style-type: none;
+#small-list-two{
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-bottom: 20px;
 	margin-top: 10px;
+	margin-bottom: 20px;
+	list-style-type: none!important;
 	display: flex;
-	flex-direction: column;
+  	flex-direction: column;
 }
 
 
@@ -241,21 +201,22 @@ i{
   display: flex;
   flex-direction: column;
 }
+.small-cards-col{
+  background: white;
+  padding: 5px;
+  width: 350px;
+  height: 150px;
+  margin: 20px;
 
-.small-cards-col{                           /*li class="small-cards-col"*/
-	background: white;
-	padding: 5px;
-	width: 350px;
-	height: 150px;
-	margin: 20px;
+  border-radius: 20px;
 
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  position: relative;
+  
 }
-
 
 
 /* Small card row image container */
@@ -301,7 +262,7 @@ i{
 }
 
 
-/* Stars*/
+/* Star rating */
 .star-box{
 	padding-left: 10px;
 }
@@ -312,43 +273,55 @@ i{
 .star-checked{
 	color: #0065FC;
 }
-/*Growth Icon*/
+
+
+
+
+/* Growth icon (second colomn list) */
 #growth-icon{
 	margin-top: 19.92px;
 	padding-top: 30px;
-	padding-right: 40px;
+	padding-right: 40px!important;
 	width: 35px;
 	height: 28px;
 	padding-left: 8px;
-	background-image: url("icones/growth-solid.png");
-	background-size: 28px;
+	padding-right: 8px;
+    background-image: url(icones/growth-solid.png);
+    background-size: 28px; 
 	background-position: right;
-	background-repeat:no-repeat;
-	background-position-x: 14px;
-	background-position-y: 30px;
-	
+    background-repeat: no-repeat; 
+    background-position-x: 14px;
+    background-position-y: 30px;
+
 }
-/*small card img container col*/ /*div u kojo je slika*/
-.small-card-img-container-col{
-	width: 40%;
+
+
+
+/* Small card col image container */
+.small-card-img-container-col {
+	width: 40%; 
 	height: 100%;
 	overflow: hidden;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	position: relative;
 }
-.small-card-col-img{               /*sacuvati vizibilnost cele slike iako je format smanjen zhvaljujuci div u kojoj je*/ 
-	width:100%;
+/* Small card col image  */
+.small-card-col-img{
+	width: 100%;
 	height: 100%;
-	position: absolute;           /*zadnja dva nema potrebe*/
-	top: 0px;  
+	position: absolute;
+	top: 0px;
 }
+
+/* Small card col text */
 .small-card-col-text{
 	width: 45%;
-    margin-bottom: 5px;
-	margin-top: 0;                     /*3px;*/                
-	margin-left: -10px;
+	margin-bottom: 5px; 
+	margin-top: 0;
+	margin-left: -10px; 
 }
+/* Star rating in columns cards */
 .star-box-col{
 	position: absolute;
 	left: 46%;
@@ -363,6 +336,153 @@ i{
 
 
 
+/* 						Third chapter            			 */
 
+/* -Third box -1- */
+#box-tree{
+	height: 525px;
+	padding: 0;
+	margin-top: 50px;
+
+}
+
+/* Small List -2- */
+#small-list-tree{
+	height: inherit;
+	padding: 0;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+  	flex-wrap: wrap;
+
+}
+
+/* Small cards activites  -3- */
+.small-cards-activities{
+	width: 350px;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 #DEEBFF;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+/*  Small-card-img-container-activities -4- */
+.small-card-img-container-activities{
+	width: 100%; 
+	height: 90%;
+	overflow: hidden;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	position: relative;
+}
+/* Small card activities image  -5- */
+.small-card-activities-img{
+	width: 100%;
+	position: absolute;
+}
+
+
+
+/* Small cards large  -6- */
+.small-cards-large{
+	flex-basis: 100%
+}
+
+/* Small card medium -6- */
+.small-cards-medium{
+	flex-basis: 55%;
+}
+
+/* Small card small  -6- */
+.small-cards-small{
+	flex-basis: 35%; 
+}
+/* Small cards even -6  */
+.small-cards-even{
+	flex-basis: 45%;
+}
+
+
+
+/* Small card space between card on top -7- */
+.small-cards-margin-top{
+	margin-top: auto;
+}
+
+/* Text in small activities cards -8- */
+.small-cards-activities-text{
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+/* Image in activities number 1   -9- */
+#activity-img-1{
+	height: 500px; 
+	width: 800px;  
+	left: -230px;
+}
+/* Image in activities number 2   -9- */
+#activity-img-2{
+	top: -110px;
+}
+/* Image in activities number 3   -9- */
+#activity-img-3{
+	top: -25px;
+}
+/* Image in activities number 4   -9- */
+#activity-img-4{
+	height: 500px; 
+	width: 800px;
+	left: -230px;
+}
+/* Image in activities number 5   -9- */
+#activity-img-5{
+	top: 0px;
+}
+/* Image in activities number 6   -9- */
+#activity-img-6{
+	top: -10px;
+}
+
+
+
+
+
+
+/*      	 Other styles        */
+
+/* Color of text in input (Marseille, France) */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+
+}
+
+/* Distance between nav items (Hébergements Activités S'inscrire) */
+nav li {
+	margin-left: 90px;
+}
+
+/* Color of fontwesome icons */
+i{
+	color: #0065FC;
+}
+
+nav p, a{
+	color: black;
+	text-decoration: none;
+
+}
 
 
