@@ -343,10 +343,11 @@ body {
 	height: 525px;
 	padding: 0;
 	margin-top: 50px;
+	
 
 }
 
-/* Small List  */
+/* Small List 3  */
 #small-list-tree{
 	height: inherit;
 	padding: 0;
@@ -484,5 +485,42 @@ nav p, a{
 	text-decoration: none;
 
 }
+
+				/*FOOTER*/
+
+footer{
+	background-color: #F2F2F2;
+	height: 220px;
+	margin-top: 130px;
+	
+}
+
+footer ul{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 25%;
+	
+}
+footer ul li{
+	display: flex;
+	flex-direction: column;
+	
+}
+footer ul li a{
+	padding-bottom: 15px;
+	opacity: 0.95;                /*vise crno*/
+}
+
+footer ul li h3{
+	margin-top: 0;
+}
+
+#footer-list{
+	padding-left: 2.5%;
+	padding-top: 2.5%;
+	margin-top: 0;
+
+}
+
 
 
