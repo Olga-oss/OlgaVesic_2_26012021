@@ -1,16 +1,29 @@
+/* Import of text font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
+/* Text font */
 * {
 	font-family: 'Raleway', regular;   /*impoter  dossier raleway et deziper*/
 
 }
- 
-body {
+
+/* Body margin top 8px, all other 0 */
+body{
+	margin: 0;
+} 
+
+/* Every thing that is in header have margin right and left 2.5%  */
+header {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	
+}
+
+/* Every thing that is in body-container have margin right and left 2.5% (same as elements in header  */
+#body-container{
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 }
-
 
 /* Often used  */
 .container{
@@ -35,13 +48,20 @@ body {
 	height: 45px;
 }
 .nav-bar{
+	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
 }
 .nav-active{
 	color: #0065FC;
-}  
-
+} 
+ /* Navbar links hover line  */
+nav ul li a{
+	padding-top: 45px;
+}
+nav a:hover{
+	border-top: 1px solid #0065FC;
+}
 
 
 /* Search box and its components */
@@ -104,7 +124,7 @@ body {
     border: 1px solid #F2F2F2;
 	border-left: none;
 	border-radius: 25px;
-	margin: 35px 20px 0px 40px;
+	margin: 2% 0 0 3.5%;
 }
 .filter-icon{
     border: 2px solid #DEEBFF;
@@ -126,7 +146,7 @@ body {
 #i-circle{
 	padding: 10px;
 	padding-left: 0%;
-	margin-top: 5px;
+	/* margin-top: 5px; */
 	
 }
 #i-circle-icon{
@@ -141,13 +161,12 @@ body {
 
 /* Big boxes (Left and Right) */
 #div-box-one{
-	margin-right: 20px;
 	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: #F2F2F2;
 }
 #div-box-two{
-	margin-left: 20px;
+	margin-left: 2.6%;
 	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: #F2F2F2;
@@ -281,7 +300,7 @@ body {
 #growth-icon{
 	margin-top: 19.92px;
 	padding-top: 30px;
-	padding-right: 40px; /*!important;*/
+	padding-right: 40px!important;
 	width: 35px;
 	height: 28px;
 	padding-left: 8px;
@@ -343,16 +362,15 @@ body {
 	height: 525px;
 	padding: 0;
 	margin-top: 50px;
-	
+	margin-left: 0px;
 
 }
 
-/* Small List 3  */
+/* Small List 3 */
 #small-list-tree{
 	height: inherit;
+	width: inherit;
 	padding: 0;
-	padding-right: 20px;
-	margin-bottom: 20px;
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
@@ -360,12 +378,11 @@ body {
 
 }
 
-/* Small cards activites   */
+/* Small cards activites  */
 .small-cards-activities{
-	width: 350px;
-	margin-right: 40px;
+	width: 23%;
 	border-radius: 20px;
-	box-shadow: 0 8px 16px 0 #DEEBFF;
+	box-shadow: 0 8px 16px 0 #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -381,7 +398,7 @@ body {
 	border-top-right-radius: 15px;
 	position: relative;
 }
-/* Small card activities image   */
+/* Small card activities image  */
 .small-card-activities-img{
 	width: 100%;
 	position: absolute;
@@ -389,7 +406,7 @@ body {
 
 
 
-/* Small cards large   */
+/* Small cards large  */
 .small-cards-large{
 	flex-basis: 100%
 }
@@ -399,7 +416,7 @@ body {
 	flex-basis: 55%;
 }
 
-/* Small card small   */
+/* Small card small  */
 .small-cards-small{
 	flex-basis: 35%; 
 }
@@ -410,9 +427,13 @@ body {
 
 
 
-/* Small card space between card on top */
+/* Small card space between card on top  */
 .small-cards-margin-top{
 	margin-top: auto;
+}
+/* Small card space between card on bottom  */
+.small-cards-margin-left{
+	margin-left: 2.6%;
 }
 
 /* Text in small activities cards  */
@@ -427,21 +448,21 @@ body {
 	width: 800px;  
 	left: -230px;
 }
-/* Image in activities number 2    */
+/* Image in activities number 2   */
 #activity-img-2{
 	top: -110px;
 }
-/* Image in activities number 3    */
+/* Image in activities number 3   */
 #activity-img-3{
 	top: -25px;
 }
-/* Image in activities number 4    */
+/* Image in activities number 4   */
 #activity-img-4{
 	height: 500px; 
 	width: 800px;
 	left: -230px;
 }
-/* Image in activities number 5   */
+/* Image in activities number 5    */
 #activity-img-5{
 	top: 0px;
 }
@@ -451,11 +472,45 @@ body {
 }
 
 
+/*    		-- 		Footer   	--		 */
+footer{
+	background-color: #F2F2F2; 
+	height: 220px;
+	margin-top: 130px;
+}
+
+footer ul{
+	display: flex; 
+	justify-content: space-between; 
+	margin-right: 25%;
+}
+
+footer ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul li a{
+	padding-bottom: 15px;
+	/* Transparency of text in <a> (link) */
+	opacity: 0.95;	
+}
+
+footer ul li h3{
+	margin-top: 0;
+}
+
+#footer-list{
+	padding-left: 2.5%;
+	padding-top: 2.5%;
+	margin-top: 0;
+}
+/*     			--------------------- 			*/
 
 
 
 
-/*      	 Other styles   */     
+/*      	 Other styles        */
 
 /* Color of text in input (Marseille, France) */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -467,12 +522,13 @@ body {
 nav ul{
 	list-style-type: none;
 	display: flex;
-
+	
 }
+
 
 /* Distance between nav items (Hébergements Activités S'inscrire) */
 nav li {
-	margin-left: 90px;
+	margin-left: 95px;
 }
 
 /* Color of fontwesome icons */
@@ -485,45 +541,5 @@ nav p, a{
 	text-decoration: none;
 
 }
-nav a:hover{
-	text-decoration: overline solid #0065FC 2px;         /*!!!treba da bude duza linija*/  /*text-decoration-thickness isto za debljinu crte*/                                                       /*text-decoration-thickness: 30px; isto za debljinu*/
-	                                   						/*!!!staviti da bude vise iznad teksta linka - */
-}
-
-								/* FOOTER */
-
-footer{
-	background-color: #F2F2F2;
-	height: 220px;
-	margin-top: 130px;
-	
-}
-
-footer ul{
-	display: flex;
-	justify-content: space-between;
-	margin-right: 25%;
-	
-}
-footer ul li{
-	display: flex;
-	flex-direction: column;
-	
-}
-footer ul li a{
-	padding-bottom: 15px;
-	opacity: 0.95;                /*vise crno*/
-}
-
-footer ul li h3{
-	margin-top: 0;
-}
-
-#footer-list{
-	padding-left: 2.5%;
-	padding-top: 2.5%;
-	margin-top: 0;
-}
-
 
 
