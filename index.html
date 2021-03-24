@@ -1,8 +1,9 @@
-<!DOCTYPE html lang="fr">
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://kit.fontawesome.com/6191440660.js" crossorigin="anonymous"></script>
 	<title>Reservia</title>
@@ -11,58 +12,60 @@
 <body>
 
 	<header>
-		<div class="container nav-bar">
-			<img src="images/logo/Reservia@3x.png" alt="logo" id="img-reservia">
-			<nav>
+		<div class="container">
+			<nav class="nav-bar">
 				<ul>
-					<li> <a href="#hébergements" class="nav-active">Hébergements </a></li>
-					<!--plus tard mettre <h2 id="hébergements">Hébergements</h2> -->
-					<li><a href="#activités">Activités </a></li>
-					<!--plus tard mettre <h2 id="activités">Activités</h2> -->
-					<li><a href="#" class="nav-active" style="font-weight: bold;">S'inscrire </a></li>
+					<li id="li-reservia">
+						<img src="images/logo/Reservia@3x.png" alt="logo" id="img-reservia">
+					</li>
+					<li id="li-hebergements"> <a href="#hébergements" class="nav-active">Hébergements </a></li>
+					<li id="li-activits"><a href="#activités">Activités</a></li>
+					<li id="li-sincire"><a href="#" class="nav-active" style="font-weight: bold;">S'inscrire </a></li>
 				</ul>
 			</nav>
 		</div>
 
 
 		<div class="container">
-			<h2 style="margin-bottom: 10px;">Trouvez votre hébergement pour des vacances de rêves</h2>
-			<p style="margin-bottom: 20px; margin-top: 0;"> En plein centre ville ou en pleine nature</p>
+			<h2 class="text-above-search-form" style="margin-bottom: 10px;">Trouvez votre hébergement pour des vacances de rêves</h2>
+			<p class="text-above-search-form" style="margin-bottom: 20px; margin-top: 0;"> En plein centre ville ou en pleine nature</p>
 			<form id="recherchez" method="post" action="traitement.php">
 				<div class="flexbox search-box">
 					<div class="search-location"></div>
 					<input type="search" class="search-input" placeholder="Marseille, France" size="25" />
 					<button value="recherchez" class="search-button">Rechercher</button>
+					<button type="submit" value="recherchez" class="search-button-responsive"><i class="fas fa-search"></i></button>
 				</div>
 			</form>
 		</div>
 
 		<div id="filters" class="container flexbox">
-			<p>Filtres</p>
-			<p class="filter-box"> <i class="fas fa-money-bill-wave filter-icon"></i> <a class="filter-text"
-					href="pageEconomique.html">Economique </a></p>
-			<p class="filter-box"><i class="fas fa-child filter-icon"></i> <a class="filter-text"
-					href="pageFamilial.html">Familial </a></p>
-			<p class="filter-box"> <i class="fas fa-heart filter-icon"></i> <a class="filter-text"
-					href="pageRomantique.html">Romantique </a></p>
-			<p class="filter-box"> <i class="fas fa-dog filter-icon"></i> <a class="filter-text"
-					href="pageAnimauxautorises">Animaux autorisés </a></p>
+			<p id="filter-p">Filtres</p>
+			<ul class="flexbox filter-ul">
+				<li class="filter-box"> <i class="fas fa-money-bill-wave filter-icon"></i> <a class="filter-text"
+					href="pageEconomique.html">Economique </a></li>
+			<li class="filter-box"><i class="fas fa-child filter-icon"></i> <a class="filter-text"
+					href="pageFamilial.html">Familial </a></li>
+			<li class="filter-box"> <i class="fas fa-heart filter-icon"></i> <a class="filter-text"
+					href="pageRomantique.html">Romantique </a></li>
+			<li class="filter-box"> <i class="fas fa-dog filter-icon"></i> <a class="filter-text"
+					href="pageAnimauxautorises">Animaux autorisés </a></li>
+			</ul>
+			
 		</div>
 	</header>
 
-	<div id="body-container">
+	 <main>
 
-		<div class="container flexbox">
+		<div id="i-container" class="container flexbox">
 			<a href="#" id="i-circle">
 				<i id="i-circle-icon" class="fas fa-info"></i>
-				<!-- <i class="fas fa-info-circle"></i>  -->
 			</a>
 			<p> Plus de 500 logements sont dispnibles dans cette ville </p>
 		</div>
 
-		<div class="flexbox">
+		<div id="big-container-responsive" class="flexbox">
 			<div id="div-box-one">
-				<!-- <div> -->
 				<h2 id="hébergements" class="div-box-one-p1">Hébergements à Marseille</h2>
 				<ul id="small-list-one">
 					<li class="small-cards-row">
@@ -70,7 +73,7 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-1.jpg" alt="Chambre de l'Auberge la Cannebière"
+								<img src="images/hebergements/room-1.jpg" alt="chambre de l'Auberge la Cannebière"
 									class="small-card-row-img img-fix-top-1">
 							</a>
 
@@ -91,13 +94,13 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-2.jpg" alt="Chambre de l'Hôtel du port"
+								<img src="images/hebergements/room-2.jpg" alt="chambre de l'Hôtel du Port"
 									class="small-card-row-img img-fix-top-2">
 							</a>
 
 
 						</div>
-						<h3 class="small-card-row-text">Hôtel du port</h3>
+						<h3 class="small-card-row-text">Hôtel du Port</h3>
 						<p class="small-card-row-text">Nuit à partir de 52<strong>€</strong></p>
 						<div class="star-box">
 							<span class="fa fa-star star-color star-checked"></span>
@@ -113,7 +116,7 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-3.jpg" alt="Chambre de l'Hôtel Les mouettes"
+								<img src="images/hebergements/room-3.jpg" alt="chambre de l'Hôtel Les mouettes"
 									class="small-card-row-img img-fix-top-3">
 							</a>
 
@@ -134,7 +137,7 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-4.jpg" alt="Chambre de l'Hôtel de la mer"
+								<img src="images/hebergements/room-4.jpg" alt="chambre de l'Hôtel de la mer"
 									class="small-card-row-img img-fix-top-4">
 							</a>
 
@@ -154,7 +157,7 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-5.jpg" alt="Chambre de l'Auberge Le Panier"
+								<img src="images/hebergements/room-5.jpg" alt="chambre de l'Auberge La Panier"
 									class="small-card-row-img img-fix-top-5">
 							</a>
 
@@ -174,7 +177,7 @@
 						<div class="small-card-img-container">
 							<a href="#">
 
-								<img src="images/hebergements/room-6.jpg" alt="Chambre de l'Hôtel chez Amina"
+								<img src="images/hebergements/room-6.jpg" alt="chambre de l'Hôtel chez Amina"
 									class="small-card-row-img img-fix-top-6">
 							</a>
 
@@ -192,8 +195,8 @@
 
 				</ul>
 				<h3 id="div-box-one-p2">Afficher plus</h3>
-				<!-- </div> -->
 			</div>
+
 			<div id="div-box-two">
 				<div class="nav-bar">
 					<h2 class="div-box-one-p1">Les plus populaires</h2>
@@ -206,7 +209,7 @@
 						<div class="small-card-img-container-col">
 							<a href="#">
 
-								<img src="images/hebergements/room-7.jpg" alt="Chambre de l'Hôtel Le soleil du matin" class="small-card-col-img">
+								<img src="images/hebergements/room-7.jpg" alt="chambre de l'Hôtel Le soleil du matin" class="small-card-col-img">
 							</a>
 
 						</div>
@@ -225,11 +228,11 @@
 						<div class="small-card-img-container-col">
 							<a href="#">
 
-								<img src="images/hebergements/room-8.jpg" alt="Chambre d'hôtes Au cœur de l'eau" class="small-card-col-img">
+								<img src="images/hebergements/room-8.jpg" alt="chambre d'hôtes Au cœur de l'eau" class="small-card-col-img">
 							</a>
 
 						</div>
-						<h3 class="small-card-col-text" style="padding-top: 10px;">Au cœur de l'eau Chambres d'hôtes </h3>
+						<h3 class="small-card-col-text" style="padding-top: 10px;">Au cœur de l'eau Chambres d'hôtes</h3>
 						<p class="small-card-col-text">Nuit à partir de 71<strong>€</strong></p>
 						<div class="star-box-col">
 							<span class="fa fa-star star-color star-checked"></span>
@@ -244,7 +247,7 @@
 						<div class="small-card-img-container-col">
 							<a href="#">
 
-								<img src="images/hebergements/room-9.jpg" alt="Chambre de l'hôtel Tout bleu et Blanc " class="small-card-col-img">
+								<img src="images/hebergements/room-9.jpg" alt="chambre de l'Hôtel Tout bleu et Blanc" class="small-card-col-img">
 							</a>
 
 						</div>
@@ -266,7 +269,7 @@
 		<div id="box-tree" class="container">
 			<h2 id="activités">Activités à Marseille</h2>
 			<ul id="small-list-tree">
-				<li class="small-cards-activities small-cards-large">
+				<li class="small-cards-activities small-cards-large small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
 							<img id="activity-img-1" src="images/activites/activity-1.jpg" alt="activités au Vieux Port"
@@ -275,7 +278,7 @@
 					</div>
 					<h3 class="small-cards-activities-text">Vieux Port</h3>
 				</li>
-				<li class="small-cards-activities small-cards-medium small-cards-margin-left">
+				<li class="small-cards-activities small-cards-medium small-cards-margin-left small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
 							<img id="activity-img-2" src="images/activites/activity-2.jpg" alt="activités au Fort de Pomègues"
@@ -284,7 +287,7 @@
 					</div>
 					<h3 class="small-cards-activities-text">Fort de Pomègues</h3>
 				</li>
-				<li class="small-cards-activities small-cards-small small-cards-margin-top small-cards-margin-left">
+				<li class="small-cards-activities small-cards-small small-cards-margin-top small-cards-margin-left small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
 							<img id="activity-img-3" src="images/activites/activity-3.jpg" alt="activités aux Îles du Frioul"
@@ -293,7 +296,7 @@
 					</div>
 					<h3 class="small-cards-activities-text">Îles du Frioul</h3>
 				</li>
-				<li class="small-cards-activities small-cards-large small-cards-margin-left">
+				<li class="small-cards-activities small-cards-large small-cards-margin-left small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
 							<img id="activity-img-4" src="images/activites/activity-4.jpg" alt="activités au Parc National des Calanques"
@@ -302,16 +305,16 @@
 					</div>
 					<h3 class="small-cards-activities-text">Parc National des Calanques</h3>
 				</li>
-				<li class="small-cards-activities small-cards-even small-cards-margin-left">
+				<li class="small-cards-activities small-cards-even small-cards-margin-left small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
-							<img id="activity-img-5" src="images/activites/activity-5.jpg" alt="activités à Notre-Dame-de-la Garde"
+							<img id="activity-img-5" src="images/activites/activity-5.jpg" alt="activités à Notre-Dame-de-la-Garde"
 								class="small-card-activities-img">
 						</a>
 					</div>
 					<h3 class="small-cards-activities-text">Notre-Dame-de-la-Garde</h3>
 				</li>
-				<li class="small-cards-activities small-cards-even small-cards-margin-top small-cards-margin-left">
+				<li class="small-cards-activities small-cards-even small-cards-margin-top small-cards-margin-left small-cards-responsive">
 					<div class="small-card-img-container-activities">
 						<a href="#">
 							<img id="activity-img-6" src="images/activites/activity-6.jpg" alt="activités au Parc Longchamp"
@@ -323,7 +326,7 @@
 			</ul>
 		</div>
 
-	</div>
+	</main>
 
 
 	<footer>
@@ -331,12 +334,12 @@
 			<li>
 				<h3>A propos</h3>
 				<a href="#">Fonctionnement du site</a>
-				<a href="#">Conditions génèrales de vente</a>
+				<a href="#">Conditions générales de vente</a>
 				<a href="#">Données et confidentialité</a>
 			</li>
 			<li>
-				<h3>Nos Hébergements</h3>
-				<a href="#">Carte qualite</a>
+				<h3>Nos hébergements</h3>
+				<a href="#">Charte qualité</a>
 				<a href="#">Soumettre votre hôtel</a>
 			</li>
 			<li>
@@ -345,7 +348,7 @@
 				<a href="#">Nous contacter</a>
 			</li>
 		</ul>
-	</footer>
+	</footer> 
 
 </body>
 

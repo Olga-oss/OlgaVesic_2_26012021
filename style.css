@@ -1,26 +1,32 @@
 /* Import of text font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+
+
 /* Text font */
 * {
 	font-family: 'Raleway', regular;   /*impoter  dossier raleway et deziper*/
 
 }
 
+
+
+
 /* Body margin top 8px, all other 0 */
 body{
 	margin: 0;
 } 
 
-/* Every thing that is in header have margin right and left 2.5%  */
+/* Everything that is in header have margin right and left 2.5%  */
 header {
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	
 }
 
-/* Every thing that is in body-container have margin right and left 2.5% (same as elements in header  */
-#body-container{
+/* Everything that is in main have margin right and left 2.5% (same as elements in header  */
+main{
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 }
@@ -40,7 +46,39 @@ header {
 	  
 }
 
+/*      	 Other styles        */
 
+/* Color of text in input (Marseille, France) */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+	width: 100%;
+	padding: 0;
+
+}
+
+
+/* Distance between nav items (Hébergements Activités S'inscrire) */
+nav li {
+	margin-left: 95px;
+}
+
+/* Color of fontwesome icons */
+i{
+	color: #0065FC;
+}
+
+nav p, a{
+	color: black;
+	text-decoration: none;
+
+}
 
 /* Navbar and Logo */
 #img-reservia{
@@ -50,7 +88,7 @@ header {
 .nav-bar{
 	padding-top: 30px;
 	display: flex;
-	justify-content: space-between;
+	width: 100%;
 }
 .nav-active{
 	color: #0065FC;
@@ -62,6 +100,13 @@ nav ul li a{
 nav a:hover{
 	border-top: 1px solid #0065FC;
 }
+#li-reservia{
+	margin-left: 0;
+}
+#li-hebergements{
+	margin-left: auto;
+}
+
 
 
 /* Search box and its components */
@@ -112,7 +157,9 @@ nav a:hover{
 	text-align: center;
 	color: white;
 }
-
+.search-button-responsive{
+	display: none;
+}
 
 /* Filters */
 #filters{
@@ -120,24 +167,33 @@ nav a:hover{
 	font-weight: bold;
   	font-size: 1.15em;
 }
+.filter-ul{
+	width: 100%; 
+	align-items: baseline;
+}
 .filter-box{
+	align-items: baseline;
+	display: flex;
     border: 1px solid #F2F2F2;
 	border-left: none;
 	border-radius: 25px;
+	width: max-content;
 	margin: 2% 0 0 3.5%;
+}
+.filter-box:hover{
+	background-color: #F2F2F2;
 }
 .filter-icon{
     border: 2px solid #DEEBFF;
 	background-color: #DEEBFF;
 	border-radius: 25px;
 	padding: 10px;
-	width: 20px;
+	width: fit-content;
 	text-align: center;
 }
 .filter-text{
-	padding: 20px;
 	padding-right: 25px;
-	text-align: center;
+	padding-left: 25px;
 }
 
 
@@ -145,8 +201,8 @@ nav a:hover{
 /* Icon i-info */
 #i-circle{
 	padding: 10px;
+	padding-top: 15px;
 	padding-left: 0%;
-	/* margin-top: 5px; */
 	
 }
 #i-circle-icon{
@@ -159,14 +215,22 @@ nav a:hover{
 }
 
 
+
+
+
+
+/*  			Second chapter			 */
+
 /* Big boxes (Left and Right) */
 #div-box-one{
+	width: 65%;
 	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: #F2F2F2;
 }
 #div-box-two{
-	margin-left: 2.6%;
+	width: 32.5%;
+	margin-left: auto;
 	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: #F2F2F2;
@@ -211,9 +275,9 @@ nav a:hover{
 .small-cards-row{
   background: white;
   padding: 5px;
-  width: 270px;
+  width: 27.5%;
   height: 220px;
-  margin: 20px;
+  margin: 2%;
 
   border-radius: 20px;
 
@@ -223,7 +287,7 @@ nav a:hover{
 .small-cards-col{
   background: white;
   padding: 5px;
-  width: 350px;
+  width: 90%;
   height: 150px;
   margin: 20px;
 
@@ -300,6 +364,7 @@ nav a:hover{
 #growth-icon{
 	margin-top: 19.92px;
 	padding-top: 30px;
+	margin-left: auto;
 	padding-right: 40px!important;
 	width: 35px;
 	height: 28px;
@@ -357,7 +422,7 @@ nav a:hover{
 
 /* 						Third chapter            			 */
 
-/* -Third box  */
+/* -Third box -1- */
 #box-tree{
 	height: 525px;
 	padding: 0;
@@ -366,7 +431,7 @@ nav a:hover{
 
 }
 
-/* Small List 3 */
+/* Small List -2- */
 #small-list-tree{
 	height: inherit;
 	width: inherit;
@@ -378,7 +443,7 @@ nav a:hover{
 
 }
 
-/* Small cards activites  */
+/* Small cards activites  -3- */
 .small-cards-activities{
 	width: 23%;
 	border-radius: 20px;
@@ -389,7 +454,7 @@ nav a:hover{
 }
 
 
-/*  Small-card-img-container-activities  */
+/*  Small-card-img-container-activities -4- */
 .small-card-img-container-activities{
 	width: 100%; 
 	height: 90%;
@@ -398,7 +463,7 @@ nav a:hover{
 	border-top-right-radius: 15px;
 	position: relative;
 }
-/* Small card activities image  */
+/* Small card activities image  -5- */
 .small-card-activities-img{
 	width: 100%;
 	position: absolute;
@@ -406,73 +471,79 @@ nav a:hover{
 
 
 
-/* Small cards large  */
+/* Small cards large  -6- */
 .small-cards-large{
 	flex-basis: 100%
 }
 
-/* Small card medium  */
+/* Small card medium -6- */
 .small-cards-medium{
 	flex-basis: 55%;
 }
 
-/* Small card small  */
+/* Small card small  -6- */
 .small-cards-small{
 	flex-basis: 35%; 
 }
-/* Small cards even  */
+/* Small cards even -6  */
 .small-cards-even{
 	flex-basis: 45%;
 }
 
 
 
-/* Small card space between card on top  */
+/* Small card space between card on top -7- */
 .small-cards-margin-top{
 	margin-top: auto;
 }
-/* Small card space between card on bottom  */
+/* Small card space between card on bottom -7- */
 .small-cards-margin-left{
 	margin-left: 2.6%;
 }
 
-/* Text in small activities cards  */
+/* Text in small activities cards -8- */
 .small-cards-activities-text{
 	padding-left: 20px;
 	font-weight: bold;
 }
 
-/* Image in activities number 1   */
+/* Image in activities number 1   -9- */
 #activity-img-1{
 	height: 500px; 
 	width: 800px;  
 	left: -230px;
 }
-/* Image in activities number 2   */
+/* Image in activities number 2   -9- */
 #activity-img-2{
 	top: -110px;
 }
-/* Image in activities number 3   */
+/* Image in activities number 3   -9- */
 #activity-img-3{
 	top: -25px;
 }
-/* Image in activities number 4   */
+/* Image in activities number 4   -9- */
 #activity-img-4{
 	height: 500px; 
 	width: 800px;
 	left: -230px;
 }
-/* Image in activities number 5    */
+/* Image in activities number 5   -9- */
 #activity-img-5{
 	top: 0px;
 }
-/* Image in activities number 6   */
+/* Image in activities number 6   -9- */
 #activity-img-6{
 	top: -10px;
 }
 
 
-/*    		-- 		Footer   	--		 */
+
+
+
+
+/* 						FINIAL				 */
+
+/*    		-- 		Just footer   	--		 */
 footer{
 	background-color: #F2F2F2; 
 	height: 220px;
@@ -493,7 +564,7 @@ footer ul li{
 footer ul li a{
 	padding-bottom: 15px;
 	/* Transparency of text in <a> (link) */
-	opacity: 0.95;	
+	opacity: 0.75;	
 }
 
 footer ul li h3{
@@ -508,38 +579,532 @@ footer ul li h3{
 /*     			--------------------- 			*/
 
 
+/* 			Responsive			 */
 
 
-/*      	 Other styles        */
 
-/* Color of text in input (Marseille, France) */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: black;
-	opacity: 1; /* Firefox */
+
+
+/* 			--------- Tablet --------			 */
+@media screen and (max-width: 1280px){
+	
+	body {
+		font-size: 1.3em;
+	}
+	header{
+		margin: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	header div.container{
+		padding: 0;
+		margin: 0;
+	}
+
+
+
+	/* 			Nav-bar and logo 		*/
+	nav ul{
+		flex-wrap: wrap;
+	}
+	nav li{
+		width: 33.33%;
+		margin: 5% 0 2% 0;
+	}
+	#li-reservia{
+		order: 1;
+		text-align: center;
+		width: 100%;
+	}
+	#li-sincire{
+		order: 4;
+		text-align: center;
+		border-bottom: 4px solid #F2F2F2;
+	}
+	#li-sincire:hover{
+		border-bottom: 4px solid #0065FC;
+	}
+	#li-hebergements{
+		order: 3;
+		text-align: center;
+		padding-bottom: 5%;
+		border-bottom: 4px solid #F2F2F2;
+	}
+	#li-hebergements:hover{
+		border-bottom: 4px solid #0065FC;
+	}
+	#li-activits{
+		order: 2;
+		text-align: center;
+		padding-bottom: 5%;
+		border-bottom: 4px solid #F2F2F2;
+	}
+	#li-activits:hover{
+		border-bottom: 4px solid #0065FC;
+	}
+	#img-reservia{
+		width: 60%;
+		height: 100%;
+	}
+
+	nav a:hover{
+		border-top: 0;
+	}
+	
+
+/* 		Text and search form		 */
+	.text-above-search-form{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	
+	.search-box{
+		width: 50%;
+		margin: 10% 25% 10% 25%;
+	}
+	.search-button{
+		display: none;
+	}
+	
+	.search-button-responsive{
+		display: inline;
+		margin-left: auto;
+		width: 15%; 
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 15px;
+	}
+	form button i{
+		color: white;
+		font-size: 1.5em;
+	}
+	.search-location{
+		width: 10%;
+		background-size: 1.3em;
+		background-position-x: center;
+	}
+	.search-input{
+		width: 75%;
+	}
+
+
+	/* Filters */
+	#filters{
+		flex-direction: column;
+	}
+	#filter-p{
+		margin-left: 5%;
+	}
+	.filter-ul{
+		flex-wrap: wrap;
+		width: 90%;
+		margin: 0 5% 0 5%;
+		padding-left: 0;
+	}
+	.filter-box{
+		margin: 0 5% 5% 0;
+		
+	}
+	
+
+
+	/* Main */
+	main{
+		margin: 0;
+	}
+	/* i-icon */
+	#i-container{
+		margin: 0;
+		padding: 0;
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+
+
+	/* 			First-chapter  	Big Box 			*/	
+	#big-container-responsive{
+		flex-direction: column-reverse;
+		margin-top: 5%;
+	}
+
+	/* Box two */
+	#div-box-two{
+		width: 100%;
+		border-radius: 0;
+
+	}
+	#growth-icon{
+		margin-right: 5%;
+		margin-left: auto;
+		background-position-x: center;
+		background-position-y: 33px;
+		padding-right: 0!important;
+	}
+	#small-list-two{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.small-cards-col{
+		margin-right: 5%;
+		margin-left: 5%;
+		width: 90%;
+		height: 250px;
+	}
+	
+
+	/* Box one */
+	#div-box-one{
+		width: 100%;
+		border-radius: 0;
+		background-color: white;
+	}
+	.div-box-one-p1{
+		padding-left: 5%;
+	}
+	#hébergements{
+		text-align: center;
+	}
+	#small-list-one{
+		flex-direction: row-reverse;
+		padding: 0;
+	}
+	.small-cards-row{
+		width: 40%;
+		height: 350px;
+		margin-right: auto;
+		margin-left: 5%;
+		box-shadow: 0 8px 16px 0 #F2F2F2;	
+	}
+	#div-box-one-p2{
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: right;
+	}
+
+	/* Small card row image top fix */
+	.img-fix-top-1{
+		top: 0px;
+	}
+	.img-fix-top-2{
+		top: 0px;
+	}
+	.img-fix-top-3{
+		top: -20px;
+	}
+	.img-fix-top-4{
+		top: -50px;
+	}
+	.img-fix-top-5{
+		top: 0px;
+	}
+	.img-fix-top-6{
+		top: -170px;
+	}
+
+	/* Box tree */
+	#activités{
+		text-align: center;
+	}
+	#small-list-tree{
+		font-size: 0.8em;
+	}
+	.small-cards-responsive{
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.small-cards-large{
+		margin-left: 2%;
+	}
+	.small-cards-even{
+		margin-right: 2%;
+	}
+
+	/* 				Footer			 */
+	footer{
+		height: fit-content;
+	}
+	#footer-list{
+		flex-direction: column;
+		padding: 0;
+		margin: 0 5% 0 5%;
+
+	}
+	footer li{
+		margin-top: 10%;
+	}
 }
 
 
-nav ul{
-	list-style-type: none;
-	display: flex;
+
+
+
+/* 			---------- Tablet 2 --------      		*/
+@media screen and (max-width: 780px){
+
+	/* 		Text and search form		 */
+	.text-above-search-form{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	
+	.search-box{
+		width: 90%;
+		margin: 10% 5% 10% 5%;
+	}
+	.search-button{
+		display: none;
+	}
+	
+	.search-button-responsive{
+		display: inline;
+		margin-left: auto;
+		width: 15%; 
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 15px;
+	}
+	form button i{
+		color: white;
+		font-size: 1.5em;
+	}
+	.search-location{
+		width: 10%;
+		background-size: 1.3em;
+		background-position-x: center;
+	}
+	.search-input{
+		width: 75%;
+	}
+
+
+	/* Box one */
+	.small-cards-row{
+		height: 280px;
+		
+	}
+
+
+	/* Box two */
+	.small-cards-col{
+		height: 200px;
+	}
+
+
+	/* Box tree */
+	#box-tree{
+		text-align: center;
+		height: fit-content;
+		width: 100%;
+	}
+	 
+	#activités{
+		margin-left: 5%;
+	}
+	#small-list-tree{
+		flex-wrap: nowrap;
+	}
+	.small-cards-responsive{
+		width: 90%;
+		height: 250px;
+		margin: 5% 5% 0 5%;
+	}
+
+	
+	/* Image in activities number 1   -9- */ 
+	#activity-img-1{
+		height: 500px; 
+		width: 800px;  
+		left: -30px;
+		top: -100px;
+	}
+	/* Image in activities number 2   -9- */
+	#activity-img-2{
+		top: -270px;
+		left: 0;
+	}
+	/* Image in activities number 3   -9- */
+	#activity-img-3{
+		top: -55px;
+		left: 0;
+	}
+	/* Image in activities number 4   -9- */
+	#activity-img-4{
+		height: 500px; 
+		width: 800px;
+		left: -230px;
+		top: -180px;
+	}
+	/* Image in activities number 5   -9- */
+	#activity-img-5{
+		top: 0px;
+		left: 0;
+	}
+	/* Image in activities number 6   -9- */
+	#activity-img-6{
+		top: -70px;
+		left: 0;
+	}
+
+
+
+
+
+			/* Activities images */
+
+		/* Image in activities number 1   -9- */ 
+		#activity-img-1{
+			height: 500px; 
+			width: 800px;  
+			left: -30px;
+			top: -100px;
+		}
+		/* Image in activities number 2   -9- */
+		#activity-img-2{
+			top: -310px;
+		}
+		/* Image in activities number 3   -9- */
+		#activity-img-3{
+			top: -55px;
+		}
+		/* Image in activities number 4   -9- */
+		#activity-img-4{
+			height: 500px; 
+			width: 800px;
+			left: -95px;
+			top: -180px;
+		}
+		/* Image in activities number 5   -9- */
+		#activity-img-5{
+			top: 0px;
+		}
+		/* Image in activities number 6   -9- */
+		#activity-img-6{
+			top: -50px;
+		}
+	
 	
 }
 
 
-/* Distance between nav items (Hébergements Activités S'inscrire) */
-nav li {
-	margin-left: 95px;
-}
 
-/* Color of fontwesome icons */
-i{
-	color: #0065FC;
-}
 
-nav p, a{
-	color: black;
-	text-decoration: none;
+/* 				--------------- Mobile ---------------			 */
+@media screen and (max-width: 480px){
+	
+	body {
+		font-size: 0.8em;
+	}
+	
 
-}
+	/* 			Nav-bar and logo 		*/
+	nav li{
+		width: 50%;
+	}
+	#li-reservia{
+		text-align: left;
+		order: 1;
+		padding-left: 2.5%;
+		width: 47.5%;
+	}
+	#li-sincire{
+		order: 2;
+		text-align: right;
+		border: none;
+		padding-top: 7.5%;
+		padding-right: 5%;
+		width: 45%;
+	}
+	#li-sincire:hover{
+		border: none;
+	}
+	#li-hebergements{
+		order: 3;
+		
+	}
+	
+	#li-activits{
+		order: 4;
+		
+	}
+	
+	/* Filters */
+	.filter-box{
+		margin-right: 1.5%;
+		
+	}
+	
+
+
+
+
+	/* 			First-chapter  	Big Box 			*/	
+	
+
+	
+	
+
+	/* Box one */
+	
+	#hébergements{
+		text-align: left;
+	}
+	#small-list-one{
+		flex-direction: column;
+	}
+	.small-cards-row{
+		width: 90%;
+		height: 250px;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	#div-box-one-p2{
+		text-align: left;
+	}
+
+	/* Small card row image top fix */
+	.img-fix-top-1{
+		top: -50px;
+	}
+	.img-fix-top-2{
+		top: -60px;
+	}
+	.img-fix-top-3{
+		top: -60px;
+	}
+	.img-fix-top-4{
+		top: -130px;
+	}
+	.img-fix-top-5{
+		top: -20px;
+	}
+	.img-fix-top-6{
+		top: -270px;
+	}
+
+
+
+	/* Box two */
+	.small-cards-col{
+		height: 160px;
+	}
+
+
+
+	/* Box tree */
+	#box-tree{
+		text-align: left;
+	}
+	#small-list-tree{
+		font-size: 1em;
+	}
+
+	
+
+
+
+}	
+
 
 
